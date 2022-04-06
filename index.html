@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll dice</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .container>div {
+           
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #member {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #member>div {
+            border: 2px solid teal;
+            height: 350px;
+            width: 28%;
+            font-size: 50px;
+        }
+
+        #roll {
+            font-size: 35px;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: teal;
+            color: yellowgreen;
+        }
+        #roll:hover{
+            color: yellow;
+        }
+        #winner{
+            font-size: 20px;
+            border: 2px solid thistle;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="winner">
+            <h1>Winner...</h1>
+
+        </div>
+        <div id="member">
+            <div id="member-1">
+                <p>Member A</p>
+                <h1></h1>
+            </div>
+            <div id="member-2">
+                <p>Member B</p>
+                <h1></h1>
+            </div>
+            <div id="member-3">
+                <p>Member C</p>
+                <h1></h1>
+            </div>
+        </div>
+        <div>
+            <button id="roll"> Roll The Dice</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
